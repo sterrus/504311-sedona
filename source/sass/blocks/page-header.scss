@@ -1,5 +1,49 @@
 .page-header {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-direction: column;
   width: 320px;
   margin: 0 auto;
   padding: 0;
+  background-color: red;
+}
+
+.page-header__logo {
+  display: block;
+  align-self: center;
+  width: 102px;
+  height: 83px;
+  background-color: antiquewhite;
+}
+
+.page-header__cont {
+  margin-top: -30px;
+  padding: 50px 20px 10px;
+  box-sizing: border-box;
+
+  background-color: #dbe9f2;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: cover;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    width: 768px;
+  }
+
+  .page-header__container {
+    min-height: 518px;
+    margin-top: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    width: 1200px;
+  }
 }
