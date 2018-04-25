@@ -9,7 +9,7 @@
   @include no-list;
 }
 
-.main-nav__toggle{
+.main-nav__toggle {
   border: 0;
   position: absolute;
   top: 0;
@@ -19,11 +19,9 @@
 @media (min-width: $tablet-width) {
   .main-nav {
     width: 768px;
-
   }
   .main-nav__togle {
     position: absolute;
-
   }
 
   .main-nav__list {
@@ -35,5 +33,4 @@
   .main-nav {
     width: 1200px;
   }
-
 }

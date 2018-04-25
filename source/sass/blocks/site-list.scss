@@ -1,7 +1,6 @@
 .site-list__item {
   display: block;
   min-height: 55px;
-  text-align: center;
   padding-top: 7px;
 
   font-family: "PT Sans", "Tahoma", sans-serif;
@@ -26,9 +25,4 @@
     line-height: 26px;
     color: #ffffff;
   }
-
-}
-
-@media (min-width: $desktop-width) {
-
 }
