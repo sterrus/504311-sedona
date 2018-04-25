@@ -1,0 +1,28 @@
+.site-list__item {
+  display: block;
+  min-height: 55px;
+  padding-top: 7px;
+
+  font-family: "PT Sans", "Tahoma", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 40px;
+  text-align: center;
+  color: #ffffff;
+  border: 1px solid #81b3d2;
+}
+
+.site-list__link {
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: $bg-sedona;
+}
+
+@media (min-width: $tablet-width) {
+  .site-list__link {
+    padding: 15px 20px;
+    font-size: 14px;
+    line-height: 26px;
+    color: #ffffff;
+  }
+}
