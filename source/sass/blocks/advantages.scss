@@ -1,9 +1,9 @@
 .advantages {
   display: flex;
   flex-direction: column;
-  font-weight: wrap;
+  align-items: center;
   width: 320px;
-  margin: 0 auto;
+  margin: 0;
   padding-top: 0;
   background-color: aqua;
 }
@@ -11,7 +11,7 @@
 .advantage__subtitle {
   display: block;
   width: 260px;
-  padding: 43px 22px 15px;
+  padding: 38px 30px 10px 30px;
   margin: 0;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
@@ -23,6 +23,10 @@
 }
 
 .advantages__list {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
   color: white;
   background: $bg-sedona;
 }
@@ -30,7 +34,7 @@
 .advantage__text {
   display: block;
   width: 280px;
-  margin: 24px 20px;
+  margin: 16px 20px 5px 20px;
   padding: 0;
   font-size: 14px;
   line-height: 24px;
@@ -78,21 +82,48 @@
 
 @media (min-width: $tablet-width) {
   .advantages {
-    width: 768px;
+    display: block;
+    width: 450px;
+    margin: 0;
+    padding: 50px 30px 5px 30px;
+    font-size: 21px;
+    line-height: 26;
+    font-size: bold;
+    color: #000000;
+    text-transform: uppercase;
+    text-align: center;
   }
 
   .advantage__subtitle {
-    padding: 50px 115px 15px;
-    font-size: 21px;
+    display: block;
+    width: 450px;
+    margin: 36px 30px 10px 30px;
+    padding: 0;
+    font-size: 18px;
+    line-height: 26px;
+    font-style: bold;
+    color: #000000;
+    text-transform: uppercase;
+    text-align: center;
   }
 
   .advantage__text {
-    padding-bottom: 50px;
+    display: block;
+    padding: 0;
+    width: 635px;
+    margin: 23px 1px;
+    font-size: 14px;
+    line-height: 24px;
+    font-style: normal;
+    color: #333333;
+    text-transform: uppercase;
+    text-align: center;
   }
 
   .advantages__list {
-    display: flex;
-    flex-wrap: wrap;
+    display: block;
+    margin: 26px 0;
+    padding: 0;
   }
 
   .advantage__item--first {
@@ -112,5 +143,29 @@
 
   .advantages__descraption--first {
     padding: 26px 40px 40px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantage {
+
+  }
+
+  .advantages__list {
+    display: block;
+    width: $desktop-width;
+  }
+
+  .advantage__text {
+    display: block;
+    width: 280px;
+    margin: 21px 20px 6px 20px;
+    padding: 0;
+    font-size: 14px;
+    line-height: 24px;
+    font-style: normal;
+    color: #333333;
+    text-transform: uppercase;
+    text-align: center;
   }
 }

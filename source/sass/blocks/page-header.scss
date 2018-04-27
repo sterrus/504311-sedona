@@ -8,13 +8,17 @@
 }
 
 .page-header__logo {
+  order: 3;
   display: block;
   align-self: center;
   width: 102px;
   height: 83px;
-  background-color: antiquewhite;
 }
 
+.page-header__logo-image {
+  margin: 0 auto;
+  display: block;
+}
 .page-header__cont {
   margin-top: -30px;
   padding: 50px 20px 10px;
@@ -30,6 +34,17 @@
 @media (min-width: $tablet-width) {
   .page-header {
     width: 768px;
+    background-color: #e3f0f9;
+  }
+
+  .page-header__logo {
+    display: block;
+    position: absolute;
+    left: -10px;
+    margin-right: 20px;
+    margin-left: 20px;
+    order: 0;
+    width: 100%;
   }
 
   .page-header__container {
@@ -41,5 +56,10 @@
 @media (min-width: $desktop-width) {
   .page-header {
     width: 1200px;
+  }
+
+  .page-header__logo {
+    //display: block;
+    //order: 3;
   }
 }

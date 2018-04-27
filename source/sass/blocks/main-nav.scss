@@ -1,12 +1,16 @@
 .main-nav {
-  position: relative;
   width: 320px;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
+  background-color: white;
 }
 
 .main-nav__list {
-  @include no-list;
+  display: flex;
+  flex-direction: column;
+  align-items: centre;
+  @include no-style-list;
+
 }
 
 .main-nav__toggle {
@@ -18,7 +22,11 @@
 
 @media (min-width: $tablet-width) {
   .main-nav {
+    display: block;
     width: 768px;
+    padding: 0;
+    margin: 0 auto;
+    background-color: white;
   }
 
   .main-nav__togle {
@@ -27,11 +35,31 @@
 
   .main-nav__list {
     display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin: 0;
+    padding: 0;
   }
 }
 
 @media (min-width: $desktop-width) {
   .main-nav {
-    width: 1200px;
+    display: block;
+    align-items: center;
+    min-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+    background-color: white;
+  }
+
+  .main-nav__list {
+    width: $desktop-width;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin: 0;
+    padding: 0;
   }
 }
