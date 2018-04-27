@@ -9,7 +9,7 @@
   display: flex;
   flex-direction: column;
   align-items: centre;
-  @include no-style-list;
+  @include no-style;
 }
 
 .main-nav__toggle {
