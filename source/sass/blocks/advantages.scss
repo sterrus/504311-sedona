@@ -48,29 +48,37 @@
   }
 }
 
-.advantage__image {
-  background-color: #ffffff;
-  height: 260px;
-}
-
-.advantage__image--first {
-  background: url("../img/main-city-mobile@1x.jpg") no-repeat;
-  background-size: cover;
-}
-
-.advantage__image--second {
-  background: url("../img/main-bridge-mobile@1x.jpg") no-repeat;
-  background-size: cover;
-}
-
 .advantages__list {
   box-sizing: border-box;
   width: 320px;
   display: flex;
   flex-direction: column;
   padding: 40px 20px;
+  text-align: center;
   color: #ffffff;
   background-color: $bg-sedona;
+
+}
+
+.advantage__image {
+  background-color: #ffffff;
+  height: 260px;
+  /* margin-top: -27px;
+    padding: 90px 20px 82px;
+    box-sizing: border-box;
+    background-image: url(../img/bg-back-mobile@1x.jpg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: cover;*/
+  &--first {
+    background: url("../img/main-city-mobile@1x.jpg") no-repeat;
+    background-size: cover;
+  }
+
+  &--second {
+    background: url("../img/main-bridge-mobile@1x.jpg") no-repeat;
+    background-size: cover;
+  }
 }
 
 /*.advantage__item {
@@ -161,15 +169,17 @@
   }
 
   .advantage__image {
+    //min-height: 518px;
+    //margin-top: 0;
     flex-grow: 3;
-  }
 
-  .advantage__image--first {
+
+  &--first {
     background: url("../img/tablet-photo-city@1x.jpg") no-repeat;
     background-size: cover;
     //height: auto;
   }
-
+}
   .advantage__image--second {
     background: url("../img/photo-bridge@1x.jpg") no-repeat;
     background-size: cover;
