@@ -310,7 +310,7 @@
       width: 480px;
       height: 58px;
       margin-bottom: 24px;
-   }
+    }
 
     &--phone:before {
       right: 80px;
@@ -318,7 +318,7 @@
 
     &--attraction {
       width: 205px;
-   }
+    }
   }
 
   .form__fieldset {
@@ -362,19 +362,19 @@
       margin: 0 320px 40px 320px;
     }
   }
- .form__label {
+  .form__label {
     &--contacts {
       padding: 18px 18px 0 0;
       outline: 1px solid green;
-   }
+    }
     &--impression {
       padding-left: 80px;
       outline: 1px solid green;
-   }
-   &--attraction {
-     text-align: center;
-     padding: 15px 0 0 80px;
-   }
+    }
+    &--attraction {
+      text-align: center;
+      padding: 15px 0 0 80px;
+    }
   }
 
   .form__input {
