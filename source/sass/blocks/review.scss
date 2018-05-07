@@ -5,7 +5,8 @@
   min-height: 200px;
   margin: 0 auto;
   padding: 39px 30px 0 30px;
-  background-color: #fff;
+  background-color: #ffffff;
+
   &--feedback {
     padding: 35px 23px 0 22px;
     min-height: 185px;
@@ -19,6 +20,7 @@
   font-family: "PT Sans", sans-serif;
   text-align: center;
   text-transform: uppercase;
+
   &--feedback {
     margin-bottom: 22px;
   }
@@ -38,9 +40,9 @@
     min-height: 205px;
 
     &--feedback {
-    height: 250px;
-    padding: 75px 165px 0 165px;
-    border: 1px solid red;
+      height: 250px;
+      padding: 75px 165px 0 165px;
+      border: 1px solid red;
     }
   }
 
@@ -54,10 +56,10 @@
   .review__wrapper {
     padding: 50px 290px 0 290px;
 
-  &--feedback {
-    min-height: 277px;
-    padding: 113px 381px 0 381px;
-    border: 1px solid red;
+    &--feedback {
+      min-height: 277px;
+      padding: 113px 381px 0 381px;
+      border: 1px solid red;
     }
   }
 }

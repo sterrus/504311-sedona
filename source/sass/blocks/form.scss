@@ -63,7 +63,7 @@
   }
 
   &--phone::before {
-    content:"";
+    content: "";
     position: absolute;
     bottom: 0;
     right: 0;
@@ -76,7 +76,7 @@
   }
 
   &--email::before {
-    content:"";
+    content: "";
     position: absolute;
     bottom: 0;
     right: 0;
@@ -103,7 +103,7 @@
   font-family: "PT Sans", sans-serif;
   background-color: #f2f2f2;
 
-  &--contacts{
+  &--contacts {
     padding-right: 70px;
   }
 
@@ -112,27 +112,27 @@
   }
 
   &--impression:checked + .form__label--impression::after {
-  content: "";
-  position: absolute;
-  top: 16px;
-  left: 16px;
-  width: 23px;
-  height: 23px;
-  border-radius: 50%;
-  background-color: #333333;
+    content: "";
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    background-color: #333333;
   }
 
   &--attraction:checked + .form__label--attraction::after {
-  content: "";
-  position: absolute;
-  top: 16px;
-  left: 16px;
-  width: 23px;
-  height: 23px;
-  border-radius: 50%;
-  background-image: url("../img/icon-tick.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+    content: "";
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    background-image: url("../img/icon-tick.svg");
+    background-repeat: no-repeat;
+    background-position: center;
   }
 }
 
@@ -341,7 +341,7 @@
       margin-bottom: 24px;
     }
 
-    &--phone:before {
+    &--phone::before {
       right: 80px;
     }
 

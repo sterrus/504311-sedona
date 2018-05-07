@@ -1,6 +1,7 @@
 .services {
   margin: 0;
   padding: 0;
+
   &__wrapper {
     display: flex;
     text-align: center;
@@ -19,9 +20,11 @@
   .services {
     margin: 0 auto;
     padding: 0;
+
     &__wrapper {
       flex-direction: row;
     }
+
     .services__list {
       padding: 165px 45px 60px;
     }
