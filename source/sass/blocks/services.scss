@@ -1,0 +1,29 @@
+.services {
+  margin: 0;
+  padding: 0;
+  &__wrapper {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #fff;
+  }
+}
+
+.services__list {
+  position: relative;
+  padding: 30px 20px 30px 71px;
+}
+
+@media (min-width: $tablet-width) {
+  .services {
+    margin: 0 auto;
+    padding: 0;
+    &__wrapper {
+      flex-direction: row;
+    }
+    .services__list {
+      padding: 165px 45px 60px;
+    }
+  }
+}

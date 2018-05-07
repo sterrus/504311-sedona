@@ -6,13 +6,13 @@
     <title>HTML Academy: Седона</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
-  <body class="page-body">
+  <body>
     <header class="page-header">
       <a class="page-header__logo">
         <img class="page-header__logo-image" src="../img/logo-sedona-mobile.svg" width="102" height="83" alt="Эмблема города">
       </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle visyally-hidden" type="button">Открыть меню</button>
+        <button class="main-nav__toggle main-nav__toggle--close" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
@@ -31,7 +31,7 @@
         </div>
       </nav>
       <div class="page-header__cont page-header__cont--image">
-        <img class="page-header__image" src="../img/bg-back-mobile@1x.jpg" width="280" height="390" alt="Добро пожаловать в седону">
+        <img class="page-header__image" src="../img/text-sedona-index.svg" width="280" height="215" alt="Добро пожаловать в седону">
       </div>
     </header>
 
@@ -39,49 +39,52 @@
 
       <h1 class="visually-hidden">Седона</h1>
 
-      <section class="advantages">
-        <h2 class="advantage__subtitle">Седона - небольшой городок в аризоне, заслуживающий большего!</h2>
-        <p class="advantage__text">Расмотрим 5 причин, по которым седона круче, чем гранд каньон!</p>
-        <div сlass="advantages__list">
-          <h3 class="advantage__item advantage__item--first">Настоящий городок</h3>
-            <span class="advantages__number">-№1-</span>
-            <p class="advantages__descraption advantages__descraption--first">Седона не аттракцион для туристов, там течет своя жизнь</p>
-            <div class="advantage__image">
-              <img src="../img/photo-cactus-mobile@1x.jpg" alt="picture-advantage" width="320" height="260">
-            </div>
+      <section class="advantages-header">
+        <div class="advantages-header__wrapper">
+          <h2 class="advantages-header__subtitle">Седона - небольшой городок в аризоне, заслуживающий большего!</h2>
+          <p class="advantages-header__text">Расмотрим 5 причин, по которым седона круче, чем гранд каньон!</p>
         </div>
       </section>
+      <section class="advantages">
+        <div class="advantages__wrapper">
+          <div сlass="advantages__list">
+            <h3 class="advantage__item advantage__item--first">Настоящий городок</h3>
+              <span class="advantages__number">-№1-</span>
+              <p class="advantages__descraption advantages__description--first">Седона не аттракцион для туристов, там течет своя жизнь</p>
+           <div class="advantage__image advantage__image--first"></div>
+         </div>
+        </div>
+      </section>
+      <!--про город-->
       <section class="services">
-        <div class="services__list">
-          <svg clas="services__list--icon"  width="40px" height="35px"></svg>
-            <div class="services__wrapper">
+       <div class="services__wrapper">
+          <div class="services__item">
+            <svg clas="services__list--icon"  width="40px" height="35px"></svg>
               <strong clas="services__label">Жилье</strong>
               <p class="services__text">Рекомендуем пожить в настоящем мотеле, все как в кино! </p>
-            </div>
-        </div>
-        <div class="services__list">
-          <svg clas="services__list--icon" width="40px" height="35px"></svg>
-            <div class="services__wrapper">
+          </div>
+          <div class="services__item">
+            <svg clas="services__list--icon" width="40px" height="35px"></svg>
               <strong clas="services__label" >Cувениры</strong>
               <p class="services__text">Не только китайского но и местного производства</p>
-            </div>
-        </div>
-        <div class="services__list">
-          <svg clas="services__list--icon" width="40px" height="35px"></svg>
-            <div class="services__wrapper">
+          </div>
+          <div class="services__item">
+            <svg clas="services__list--icon" width="40px" height="35px"></svg>
               <strong clas="services__label">Еда</strong>
               <p class="services__text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-            </div>
+         </div>
         </div>
       </section>
       <section class="advantages">
+       <div class="advantages__wrapper">
         <div сlass="advantages__list">
           <h3 class="advantage__item advantage__item--first">Там есть мост дьявола</h3>
             <span class="advantages__number">-№2-</span>
-            <p class="advantages__descraption advantages__descraption--first">Да но нему можно пройти если вы осмелитесь, конечно</p>
-            <div class="advantage__image">
-              <img src="../img/photo-bridge-mobile@1x.jpg" alt="picture-advantage" width="320" height="260">
+            <p class="advantages__descraption advantages__description--first">Да но нему можно пройти если вы осмелитесь, конечно</p>
+            <div class="advantage__image advantage__image--second">
+              <!--<img src="../img/photo-bridge@1x.jpg" alt="picture-advantage">-->
             </div>
+         </div>
         </div>
       </section>
       <!-- <section class="bridge">
@@ -94,34 +97,34 @@
         </div>
         </div>
       </section>-->
-      <section class="advantages">
-        <div сlass="advantages__list">
-          <h3 class="advantage__item advantage__item--second">Небольшая площадь</h3>
-            <span class="advantages__number">-№3-</span>
-            <p class="advantages__descraption advantages__descraption--second">Все интересные места находятся очент близко</p>
-        </div>
-      </section>
-      <section class="advantages">
-        <div сlass="advantages__list">
-          <h3 class="advantage__item advantage__item--second">Красивая дорога</h3>
-            <span class="advantages__number">-№4-</span>
-            <p class="advantages__descraption advantages__descraption--second">Ехать в седону из Лас-Вегаса совсем не скучно!</p>
-        </div>
-      </section>
-      <section class="advantages">
-        <div сlass="advantages__list">
-          <h3 class="advantage__item advantage__item--second">Мало туристов</h3>
-            <span class="advantages__number">-№5-</span>
-            <p class="advantages__descraption advantages__descraption--second">Большинство едет в гранд каньон и толпится там</p>
+      <section class="reason">
+        <div class="reason__wrapper">
+          <div сlass="reason__item">
+            <h3 class="reason__label reason__label--second">Небольшая площадь</h3>
+              <span class="reason__number">-№3-</span>
+              <p class="reason__text">Все интересные места находятся очент близко</p>
+         </div>
+         <div сlass="reason__item">
+            <h3 class="reason__label reason__label--second">Красивая дорога</h3>
+              <span class="reason__number">-№4-</span>
+              <p class="reason__text">Ехать в седону из Лас-Вегаса совсем не скучно!</p>
+         </div>
+         <div сlass="reason__item">
+            <h3 class="reason__label reason__label--second">Мало туристов</h3>
+              <span class="reason__numbe">-№5-</span>
+              <p class="reason__textd">Большинство едет в гранд каньон и толпится там</p>
+          </div>
         </div>
       </section>
       <section class="hotels">
-        <p class="hotels__title">Заинтересовались?</p>
-        <p class="hotels__text">Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в седоне</p>
-        <button class="hotels__button" type="button">Найти гостиницу</button>
+        <div class="hotels__wrapper">
+          <p class="hotels__title">Заинтересовались?</p>
+          <p class="hotels__text">Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в седоне</p>
+          <button class="hotels__button" type="button">Найти гостиницу</button>
+        </div>
       </section>
       <section class="map">
-        <img class="map-map__image" src="../img/bg-map-mobile@1x.jpg" width="320" height="350" alt="map">
+        <div class="map-sedona"></div>
       </section>
     </main>
     <footer class="page-footer">

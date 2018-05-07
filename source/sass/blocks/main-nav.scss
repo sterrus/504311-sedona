@@ -1,64 +1,116 @@
 .main-nav {
   width: 320px;
+  position: relative;
   margin: 0 auto;
   padding: 0;
   background-color: white;
+  order: -1;
 }
 
 .main-nav__list {
-  display: flex;
-  flex-direction: column;
-  align-items: centre;
-  @include no-style;
+  //display: flex;
+ // flex-direction: column;
+  //align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .main-nav__toggle {
+  display: block;
+  width: 24px;
+  height: 23px;
   border: 0;
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 16px;
+  right: 20px;
+  cursor: pointer;
+  z-index: 2;
+  background: #81b3d2;
+  cursor: pointer;
+  border: none;
+  &:hover,
+  &:active {
+    background-color: #81b3d2;
+  }
 }
+
+.main-nav__toggle--open {
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: -200px;
+    right: 0;
+    width: 22px;
+    height: 4px;
+    background-color: #81b3d2;
+    box-shadow: 0 8px 0 0 #81b3d2;
+  }
+}
+
+.main-nav__toggle--close {
+  &::before,
+  &::after {
+  content: "";
+  position: absolute;
+  top: 9px;
+  left: -2px;
+  width: 28px;
+  height: 5px;
+  background-color: #ffffff;
+  }
+
+  &::before {
+    transform: rotate(45deg)
+  }
+
+  &::after {
+    transform: rotate(-45deg)
+  }
+}
+
+//.main-nav--closed .main-nav__toggle::active::before {
+  //background-color: rgba(255, 255, 255, 0.3);
+  //box-shadow: 0 8px 0 0 rgba(255, 255, 255, //0.3), 0 16px 0 0 rgba(255, 255, 255, 0.3);
+//}
+
+//.main-nav__list a {
+  //display: block;
+
+//}
 
 @media (min-width: $tablet-width) {
   .main-nav {
-    display: block;
+    //display: block;
     width: 768px;
-    padding: 0;
-    margin: 0 auto;
-    background-color: white;
+    //height: 56px;
   }
 
-  .main-nav__togle {
+  .main-nav__toggle{
     position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
   }
 
-  .main-nav__list {
+  /*.main-nav__list {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+   justify-content: space-between;
     align-items: flex-start;
     margin: 0;
-    padding: 0;
-  }
+    padding-left: 1px;
+    padding-right: 3px;
+  }*/
 }
 
 @media (min-width: $desktop-width) {
   .main-nav {
     display: block;
     align-items: center;
-    min-width: 1200px;
+    width: 1200px;
     margin: 0 auto;
     padding: 0;
     background-color: white;
-  }
-
-  .main-nav__list {
-    width: $desktop-width;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: flex-start;
-    margin: 0;
-    padding: 0;
   }
 }

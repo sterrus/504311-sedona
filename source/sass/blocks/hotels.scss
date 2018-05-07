@@ -1,0 +1,34 @@
+.hotels {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  vertical-align: top;
+  padding: 30px 20px;
+  &__title {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  &__button {
+    display: inline-block;
+    width: 100%;
+    background-color: #5496bd;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    line-height: 26px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .hotels {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    text-align: center;
+    padding: 30px 20px;
+  }
+}
