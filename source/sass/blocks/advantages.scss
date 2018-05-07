@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   text-align: center;
-  background-color: #fff;
+  background-color: #ffffff;
   //position: relative;
   //width: 320px;
   //box-sizing: border-box;
@@ -37,6 +37,7 @@
 .advantages {
   margin: 0;
   padding: 0;
+
   &__wrapper {
     display: flex;
     //text-align: center;
@@ -48,7 +49,7 @@
 }
 
 .advantage__image {
-  background-color: #fff;
+  background-color: #ffffff;
   height: 260px;
 }
 
@@ -68,7 +69,7 @@
   display: flex;
   flex-direction: column;
   padding: 40px 20px;
-  color: #fff;
+  color: #ffffff;
   background-color: $bg-sedona;
 }
 
@@ -112,25 +113,26 @@
 .advantages__descraption--second {
   padding: 15px 20px 35px;
 }*/
+
 @media (min-width: $tablet-width) {
-.advantages-header {
-  margin: 0;
-  padding: 0;
-}
+  .advantages-header {
+    margin: 0;
+    padding: 0;
+  }
 
-.advantages-header__wrapper {
-  width: 510px;
-  padding: 50px 20px 14px;
-}
+  .advantages-header__wrapper {
+    width: 510px;
+    padding: 50px 20px 14px;
+  }
 
-.advantages-header__subtitle {
-  font-size: 21px;
-  //line-height: 26px;
-  font-style: bold;
-  color: #000000;
-  text-transform: uppercase;
-  text-align: center;
-}
+  .advantages-header__subtitle {
+    font-size: 21px;
+    //line-height: 26px;
+    font-style: bold;
+    color: #000000;
+    text-transform: uppercase;
+    text-align: center;
+  }
 
   /*.advantage__text {
     display: block;
@@ -148,10 +150,12 @@
   .advantages {
     box-sizing: border-box;
     justify-content: center;
+
     &__wrapper {
       flex-direction: row;
     }
   }
+
   .advantages__list {
     width: 33%;
   }
@@ -159,11 +163,13 @@
   .advantage__image {
     flex-grow: 3;
   }
+
   .advantage__image--first {
     background: url("../img/tablet-photo-city@1x.jpg") no-repeat;
     background-size: cover;
     //height: auto;
   }
+
   .advantage__image--second {
     background: url("../img/photo-bridge@1x.jpg") no-repeat;
     background-size: cover;
