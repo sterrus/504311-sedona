@@ -1,27 +1,15 @@
 .page-footer {
+  text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  max-width: 320px;
-  min-height: 243px;
-  margin: 0 auto;
-  padding: 0;
-  border-color: white;
-  //border: 1px solid blueviolet;
-  //box-sizing: border-box;
 }
 
-.page-footer__tag {
-  font-family: "PT Sans", sans-serif;
-  font-size: 21px;
+.page-footer__hashtag {
   font-weight: bold;
-  line-height: 26px;
-  color: black;
+  font-family: PT Sans, sans-serif;
+  font-size: 21px;
   text-transform: uppercase;
-  text-align: center;
-  padding: 37px;
-  margin-left: 0 auto;
+  margin-top: 36px
 }
 
 .page-footer__social {
@@ -34,25 +22,16 @@
 }
 
 .page-footer__copyright {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-family: PT Sans, sans-serif;
   display: flex;
-  flex-direction: row;
   justify-content: center;
-  width: 140px;
-  height: 40px;
+  align-items: center;
   margin-top: 40px;
-  margin-bottom: 22px;
-  font-family: "PT Sans", sans-serif;
-  font-size: 21px;
-  font-weight: bold;
-  line-height: 26px;
-  color: black;
 
-  .page-footer__copyright__text {
-    display: block;
-    margin: 2px 13px 0 0;
-    padding: 0;
-    font-size: 14px;
-    line-height: 14px;
+  .page-footer__link {
+    min-left: 13px;
   }
 }
 
@@ -60,17 +39,12 @@
   .page-footer {
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    min-width: 650px;
-    height: 105px;
-    margin-bottom: 15px;
-    background-color: white;
-    //outline: 1px solid blueviolet;
+    align-items: flex-start;
+    padding: 35px 60px 35px;
   }
 
-  .page-footer__tag {
-    margin-right: 51px;
-    padding: 47px 60px;
+  .page-footer__hashtag {
+    margin-top: 8px;
   }
 
   .page-footer__social {
@@ -80,28 +54,17 @@
   }
 
   .page-footer__copyright {
-    margin-right: -6px;
-    padding-top: 4px;
-  }
-
-  .page-footer__copyright__text {
-    margin: 0;
+    margin-top: 6px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-footer {
-    min-width: 960px;
-    outline: 1px solid blueviolet;
+    padding: 35px 44px 35px 135px;
   }
 
-  .page-footer__tag {
-    padding: 47px 119px;
-    margin-right: 149px;
-    outline: 1px solid blueviolet;
-  }
-
-  .page-footer__copyright {
-    display: block;
+  .page-footer__hashtag {
+    margin-top: 10px;
+    //outline: 1px solid blueviolet;
   }
 }

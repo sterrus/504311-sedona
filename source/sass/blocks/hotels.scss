@@ -1,36 +1,75 @@
 .hotels {
   margin: 0;
-  //padding: 0;
+  padding: 0;
+  font-family: "PT Sans", sans-serif;
+  text-transform: uppercase;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   text-align: center;
   vertical-align: top;
-  padding: 30px 20px;
+  padding: 0 25px;
+  border-top: 1px solid #d6d6d6;
 
   &__title {
     font-size: 20px;
+    font-weight: bold;
+    //line-height: 24px;
+    display: block;
+    margin-top: 30px;
+  }
+
+  &__text {
+    font-size: 14px;
+    margin-top: 17px;
     line-height: 24px;
   }
 
   &__button {
-    display: inline-block;
-    width: 100%;
+    //display: inline-block;
+    width: 280px;
     background-color: #5496bd;
     font-size: 14px;
     font-weight: bold;
     color: #ffffff;
-    line-height: 26px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    line-height: 57px;
+    text-transform: uppercase;
+    padding: 0;
+    margin-top: 36px;
+    border: none;
   }
 }
 
 @media (min-width: $tablet-width) {
   .hotels {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    text-align: center;
-    padding: 30px 20px;
+    border: none;
+    padding: 0 188px;
+
+    &__title {
+      font-size: 30px;
+      margin-top: 77px;
+    }
+
+    &__text {
+      margin-top: 25px;
+    }
+
+    &__button {
+      margin-top: 42px;
+      line-height: 56px;
+      width: 457px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .hotels {
+    padding: 0 401px;
+
+    &__title {
+      margin-top: 49px;
+  }
+    &__button {
+      margin-top: 48px;
+    }
   }
 }

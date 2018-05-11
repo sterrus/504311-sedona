@@ -1,32 +1,61 @@
 .services {
-  margin: 0;
-  padding: 0;
+  display: flex;
+  text-transform: uppercase;
+  flex-direction: column;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  font-family: "PT Sans", sans-serif;
+  //margin: 0;
+  padding: 0 24px 42px;
 
-  &__wrapper {
+  &__item {
     display: flex;
-    text-align: center;
-    justify-content: center;
-    flex-direction: column;
-    background-color: #ffffff;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: left;
+    box-sizing: border-box;
+    margin-top: 21px;
+  }
+
+  &__list--icon {
+    width: 40px;
+    height: 35px;
+  }
+
+  &__label {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 13px 0 0 10px;
+  }
+
+  &__text {
+    font-size: 14px;
+    margin: 17px 0 0 50px;
   }
 }
 
-.services__list {
-  position: relative;
-  padding: 30px 20px 30px 71px;
-}
 
 @media (min-width: $tablet-width) {
   .services {
-    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    //margin: 0 auto;
     padding: 0;
 
-    &__wrapper {
-      flex-direction: row;
-    }
+    &__item {
+      width: 33%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      box-sizing: border-box;
+      margin-top: 55px;
+      margin-bottom: 42px;
+      padding: 0 47px 20px;
 
-    .services__list {
-      padding: 165px 45px 60px;
+      &--souvenirs {
+        order: 2;
+      }
     }
   }
 }

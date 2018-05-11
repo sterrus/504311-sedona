@@ -1,85 +1,87 @@
 .advantages-header {
+  //min-width: 320px;
+  //margin: 0;
   display: flex;
-  justify-content: center;
   text-align: center;
+  position: relative;
   background-color: #ffffff;
-  //position: relative;
-  //width: 320px;
-  //box-sizing: border-box;
-  //background-image: url(../img/photo-cactus-mobile@1x.jpg);
-  margin: 0;
-  padding-top: 0;
-  //background-position: top center;
-  //background-repeat: no-repeat;
+  font-family: "PT Sans", sans-serif;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 40px 20px 42px;
 }
 
+/*--в form написать*/
 .advantages-header__wrapper {
-  width: 270px;
-  padding-top: 40px 20px 26px;
-  //font-family: "PT Sans", sans-serif;
-  //font-weight: normal;
-  //line-height: 24;
-  //text-align: center;
-  //text-transform: uppercase;
-  //color: #333;
+
+
 }
 
 .advantages-header__subtitle {
   font-size: 18px;
   line-height: 26px;
   font-weight: bold;
+  margin: 0 10px;
 }
 
-/*.advantage__text {
-  line-height: 26px;
-  text-align: center;
-}*/
+.advantages-header__text {
+  font-size: 14px;
+  margin-top: 30px;
+}
+
 .advantages {
+  min-width: 270px;
   margin: 0;
-  padding: 0;
-
-  &__wrapper {
-    display: flex;
-    //text-align: center;
-    //justify-content: center;
-    flex-direction: column;
-    box-sizing: border-box;
-    //background-color: #eee;
-  }
+  font-family: "PT Sans", sans-serif;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #81b3d2;
 }
 
-.advantages__list {
-  box-sizing: border-box;
-  width: 320px;
+.advantages__item {
   display: flex;
   flex-direction: column;
-  padding: 40px 20px;
+  align-items: center;
   text-align: center;
-  color: #ffffff;
-  background-color: $bg-sedona;
-
+  box-sizing: border-box;
+  padding: 40px 23px 43px;
+  background-color: #81b3d2;
 }
 
-.advantage__image {
-  background-color: #ffffff;
-  height: 260px;
-  /* margin-top: -27px;
-    padding: 90px 20px 82px;
-    box-sizing: border-box;
-    background-image: url(../img/bg-back-mobile@1x.jpg);
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    background-size: cover;*/
-  &--first {
-    background: url("../img/main-city-mobile@1x.jpg") no-repeat;
-    background-size: cover;
-  }
-
-  &--second {
-    background: url("../img/main-bridge-mobile@1x.jpg") no-repeat;
-    background-size: cover;
-  }
+.advantages__item--rev {
+   padding-top: 25px;
 }
+
+.advantages__header {
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.advantages__number {
+  margin-top: 13px;
+  font-size: 18px;
+}
+
+.advantages__text {
+  font-size: 18px;
+  box-sizing: border-box;
+  margin-top: 18px;
+}
+
+.advantages__image {
+  height: 255px;
+  overflow: hidden;
+}
+
+.advantages__image--photo-img {
+  display: block;
+  width: 100%;
+}
+
+
+
 
 /*.advantage__item {
   margin: 0;
@@ -124,8 +126,8 @@
 
 @media (min-width: $tablet-width) {
   .advantages-header {
+    padding: 50px 135px 55px;
     margin: 0;
-    padding: 0;
   }
 
   .advantages-header__wrapper {
@@ -156,39 +158,57 @@
   }*/
 
   .advantages {
-    box-sizing: border-box;
-    justify-content: center;
-
-    &__wrapper {
-      flex-direction: row;
-    }
+    //min-width: 768px;
+    //width: 768px;
+    display: flex;
+    flex-direction: row;
   }
 
-  .advantages__list {
+  .advantages--rev {
+    flex-direction: row-reverse;
+  }
+
+  .advantages__item {
     width: 33%;
+    padding: 28px 45px 20px 45px;
   }
 
-  .advantage__image {
-    //min-height: 518px;
-    //margin-top: 0;
-    flex-grow: 3;
+  .advantages__header{
+    font-size: 21px;
+    width: 151px;
+    }
 
+  .advantages__image {
+    width: 66%;
+  }
 
-  &--first {
-    background: url("../img/tablet-photo-city@1x.jpg") no-repeat;
-    background-size: cover;
-    //height: auto;
+  .advantages__image--photo-img {
+    height: 255px;
   }
-}
-  .advantage__image--second {
-    background: url("../img/photo-bridge@1x.jpg") no-repeat;
-    background-size: cover;
-    //height: auto;
+
+  .advantages__text__text {
+    margin-top: 22px;
+    line-height: 20px;
   }
+
 }
 
 @media (min-width: $desktop-width) {
-  .advantages__list {
-    padding: 50px;
+  .advantages-header {
+   //width: 1200px;
+    //width: 1200px;
+    padding: 50px 360px 55px;
+
+  }
+
+  .advantages-header__text{
+    margin-top: 34px;
+  }
+  .advantages__item {
+    padding: 36px 55px 45px;
+  }
+
+  .advantages__item--rev {
+    padding: 36px 85px 45px;
   }
 }
