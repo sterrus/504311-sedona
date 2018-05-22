@@ -12,28 +12,27 @@
         <img class="page-header__logo-image" src="../img/logo-sedona-mobile.svg" width="102" height="83" alt="Эмблема города">
       </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle main-nav__toggle--close" type="button"><span class="visually-hidden">Открыть меню</span></button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active">
-              <a>Главная</a>
+        <button class="main-nav__toggle main-nav__toggle--close" type="button"><span class="visually-hidden">Закрыть меню</span></button>
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link  main-navt--first-elem  main-nav__link--active">Главная</a>
             </li>
-            <li class="site-list__item">
-              <a href="photo.html">Фото и видео</a>
+            <li class="main-nav__item main-nav__item--spec-elem">
+              <a class="main-nav__link" href="photo.html">Фото и видео</a>
             </li>
-            <li class="site-list__item">
-              <a href="form.html">Форма отзыва</a>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="form.html">Форма отзыва</a>
             </li>
-            <li class="site-list__item">
-              <a href="#">HTML Academy</a>
+            <li class="main-nav__item">
+              <a class="main-nav__link main-nav__link--last-elem" href="#">HTML Academy</a>
             </li>
           </ul>
-        </div>
       </nav>
-      <div class="page-header__cont page-header__cont--image">
+      <div class="page-header__cont">
         <img class="page-header__image" src="../img/text-sedona-index.svg" width="280" height="215" alt="Добро пожаловать в седону">
       </div>
     </header>
+
     <main class="content">
       <section class="photos">
         <h2 class="photos__title">Фото и видео</h2>
@@ -94,23 +93,14 @@
       </section>
     </main>
     <footer class="page-footer">
-      <a href="#" class="page-footer__tag">#visitsedona</a>
-    <div class="page-footer__social social">
-      <ul class="social__list">
-        <li class="social__item">
-          <a class="social__link social__link--twitter" href="#">Мы в твиттере</a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--facebook" href="#">Мы в файсбуке</a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--youtube" href="#">Мы на ютубе</a>
-        </li>
-      </ul>
+      <a href="#" class="page-footer__hashtag">#visitsedona</a>
+    <div class="social">
+      <a class="social__link social__link--twitter" href="#">Мы в твиттере</a>
+      <a class="social__link social__link--facebook" href="#">Мы в файсбуке</a>
+      <a class="social__link social__link--youtube" href="#">Мы на ютубе</a>
     </div>
-    <div class="page-footer__copyright copyright">
-      <b class="copyright__text">Разработано</b>
-      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+    <div class="page-footer__copyright">
+      <a class="copyright" href="http://htmlacademy.ru">Разработано <img src="img/logo-htmlacademy.svg" alt="" class="copyright__pic" width="25" height="35"></a>
     </div>
     </footer>
   </body>

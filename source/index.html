@@ -12,25 +12,23 @@
         <img class="page-header__logo-image" src="../img/logo-sedona-mobile.svg" width="102" height="83" alt="Эмблема города">
       </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle main-nav__toggle--close" type="button"><span class="visually-hidden">Открыть меню</span></button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active">
-              <a>Главная</a>
+        <button class="main-nav__toggle main-nav__toggle--close" type="button"><span class="visually-hidden">Закрыть меню</span></button>
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link  main-navt--first-elem  main-nav__link--active">Главная</a>
             </li>
-            <li class="site-list__item">
-              <a href="photo.html">Фото и видео</a>
+            <li class="main-nav__item main-nav__item--spec-elem">
+              <a class="main-nav__link" href="photo.html">Фото и видео</a>
             </li>
-            <li class="site-list__item">
-              <a href="form.html">Форма отзыва</a>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="form.html">Форма отзыва</a>
             </li>
-            <li class="site-list__item">
-              <a href="#">HTML Academy</a>
+            <li class="main-nav__item">
+              <a class="main-nav__link main-nav__link--last-elem" href="#">HTML Academy</a>
             </li>
           </ul>
-        </div>
       </nav>
-      <div class="page-header__cont page-header__cont--image">
+      <div class="page-header__cont">
         <img class="page-header__image" src="../img/text-sedona-index.svg" width="280" height="215" alt="Добро пожаловать в седону">
       </div>
     </header>
@@ -45,42 +43,42 @@
           <p class="advantages-header__text">Расмотрим 5 причин, по которым седона круче, чем гранд каньон!</p>
         </div>
       </section>
-      <section class="advantages">
+      <section class="advantages clearfix">
         <div class="advantages__item advantage__item--text-first advantage__item--text">
           <h2 class="advantages__header">Настоящий городок</h2>
-          <span class="advantages__number">-№1-</span>
+          <span class="advantages__number">&ndash;-№1-&ndash;</span>
           <p class="advantages__text">Седона не аттракцион для туристов, там течет своя жизнь</p>
         </div>
         <div class="advantages__image advantages__image--photo">
-          <img class="advantages__image--photo-img" src="../img/main-city-mobile@1x.jpg" width="320" height="255" alt="City of Sedona">
+          <img class="advantages__image--photo-img" src="../img/main-city-mobile@1x.jpg" width="100%" height="255" alt="City of Sedona">
         </div>
       </section>
       <!--про город-->
-      <section class="services">
-          <div class="services__item services__item--house">
-            <svg clas="services__list--icon"  width="40px" height="35px"></svg>
-            <h2 clas="services__label">Жилье</h2>
-            <p class="services__text">Рекомендуем пожить в настоящем мотеле, все как в кино! </p>
+      <section class="reason">
+          <div class="reason__item">
+            <img class="reason__icon" src="img/icon-house.svg" width="40px" height="35px">
+            <h2 class="reason__label">Жилье</h2>
+            <p class="reason__text">Рекомендуем пожить в настоящем мотеле, все как в кино! </p>
           </div>
-          <div class="services__item services__item--souvenirs">
-            <svg clas="services__list--icon" width="40px" height="35px"></svg>
-              <h2 clas="services__label" >Cувениры</h2>
-              <p class="services__text">Не только китайского но и местного производства</p>
+          <div class="reason__item">
+            <img class="reason__icon" src="img/icon-gift.svg" width="40px" height="35px">
+            <h2 class="reason__label" >Cувениры</h2>
+            <p class="reason__text">Не только китайского но и местного производства</p>
           </div>
-          <div class="services__item services__item--food">
-            <svg clas="services__list--icon" width="40px" height="35px"></svg>
-              <h2 clas="services__label">Еда</h2>
-              <p class="services__text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+          <div class="reason__item">
+            <img class="reason__icon" src="img/icon-burger.svg" width="40px" height="35px">
+            <h2 class="reason__label">Еда</h2>
+            <p class="reason__text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
         </div>
       </section>
-      <section class="advantages advantages--rev">
+      <section class="advantages advantages--rev clearfix">
       <div class="advantages__item advantages__item--rev">
         <h2 class="advantages__header">Там есть мост дьявола</h2>
-        <span class="advantages__number">-№2-</span>
-        <p class="advantages__text">Да но нему можно пройти если вы осмелитесь, конечно</p>
+        <span class="advantages__number">&ndash;-№2-&ndash;</span>
+        <p class="advantages__text">Да но нему можно пройти!<br class="advantages__br--recerse"> если вы осмелитесь, конечно</p>
       </div>
       <div class="advantages__image advantages__image--second">
-        <img class="advantages__image--photo-img" src="../img/photo-bridge@1x.jpg" alt="picture-advantage">
+        <img class="advantages__image--photo-img" src="../img/photo-bridge@1x.jpg" width="100%" height="255" alt="picture-advantage">
       </div>
       </section>
       <!-- <section class="bridge">
@@ -94,17 +92,17 @@
         </div>
       </section>-->
       <section class="reason reason--grey">
-        <div сlass="reason__item reason__item--grey">
+        <div class="reason__item reason__item--grey">
           <h2 class="reason__label">Небольшая площадь</h2>
           <span class="reason__number">&ndash; №3 &ndash;</span>
-          <p class="reason__text">Все интересные места <br>находятся очент близко</p>
+          <p class="reason__text">Все интересные места находятся очень близко</p>
         </div>
-        <div сlass="reason__item reason__item--grey">
+        <div class="reason__item reason__item--grey">
           <h2 class="reason__label">Красивая дорога</h2>
           <span class="reason__number">&ndash; №4 &ndash;</span>
           <p class="reason__text">Ехать в седону из Лас-Вегаса совсем не скучно!</p>
         </div>
-        <div сlass="reason__item">
+        <div class="reason__item reason__item--grey">
           <h2 class="reason__label">Мало туристов</h2>
           <span class="reason__number">&ndash; №5 &ndash;</span>
           <p class="reason__text">Большинство едет в гранд каньон и толпится там</p>
@@ -114,26 +112,19 @@
         <h2 class="hotels__title">Заинтересовались?</h2>
         <p class="hotels__text">Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в седоне</p>
         <a href="hotels__search">
-        <button class="button hotels__button" type="button">Найти гостиницу</button></a>
+        <button class="button hotels__button" type="button">Найти гостиницу</button>
+        </a>
       </section>
       <section class="map">
-      <!--  <div class="map-sedona"></div>-->
+      <!--<div class="map-sedona"></div>-->
       </section>
     </main>
     <footer class="page-footer">
-      <a href="#" class="hashtag">#visitsedona</a>
+      <a href="#" class="page-footer__hashtag">#visitsedona</a>
     <div class="social">
-      <ul class="social__list">
-        <li class="social__item">
-          <a class="social__link social__link--twitter" href="#">Мы в твиттере</a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--facebook" href="#">Мы в файсбуке</a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--youtube" href="#">Мы на ютубе</a>
-        </li>
-      </ul>
+      <a class="social__link social__link--twitter" href="#">Мы в твиттере</a>
+      <a class="social__link social__link--facebook" href="#">Мы в файсбуке</a>
+      <a class="social__link social__link--youtube" href="#">Мы на ютубе</a>
     </div>
     <div class="page-footer__copyright">
       <a class="copyright" href="http://htmlacademy.ru">Разработано <img src="img/logo-htmlacademy.svg" alt="" class="copyright__pic" width="25" height="35"></a>

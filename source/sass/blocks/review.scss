@@ -1,3 +1,11 @@
+.review {
+  align-items: center;
+  width: 320px;
+  margin: 0 auto;
+  padding: 0;
+
+}
+
 .review__wrapper {
   text-align: center;
   font-family: PT Sans, sans-serif;
@@ -26,6 +34,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .review {
+    width: 768px;
+
+}
   .review__wrapper {
     padding: 75px 165px 64px;
     margin: 0;
@@ -42,6 +54,9 @@
 }
 
 @media (min-width: $desktop-width) {
+  .review {
+    width: 1200px;
+  }
   .review__wrapper {
     padding: 50px 340px 55px;
   }

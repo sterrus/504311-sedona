@@ -21,3 +21,22 @@
 @import "blocks/page-main.scss";
 
 
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+h2,
+span,
+p,
+b {
+  margin: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+

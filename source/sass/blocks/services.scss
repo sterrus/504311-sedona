@@ -20,12 +20,14 @@
   &__list--icon {
     width: 40px;
     height: 35px;
+    margin-top: 4px;
   }
 
   &__label {
     font-size: 18px;
     font-weight: bold;
     margin: 13px 0 0 10px;
+    width: 77%;
   }
 
   &__text {

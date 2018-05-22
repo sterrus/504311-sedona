@@ -1,6 +1,32 @@
-.social__list {
-  letter-spacing: none;
-  margin: 0 auto;
-  margin-top: 0;
-  padding: 0;
+.social {
+  display: flex;
+  justify-content: center;
+  margin-top: 35px;
+}
+
+.social__link {
+  width: 45px;
+  height: 48px;
+  background-color: #81b3d2;
+  margin-right: 7px;
+}
+
+.social__link--youtube {
+  margin-right: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .social {
+    margin-top: 0;
+  }
+
+  .social__link {
+    margin-right: 8px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .social {
+    margin-right: 89px;
+  }
 }
